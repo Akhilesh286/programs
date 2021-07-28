@@ -1,0 +1,15 @@
+{{#each name}}
+  {{!-- onely all type of value  >> <h1>{{this}}</h1> or value of a name you want to get this <h1>{{@index}}:{{this}}</h1> --}}
+<h1>{{@index}}:{{this}}</h1>
+{{/each}}
+
+<h1>{{person.name.name}}</h1>
+
+{{#if person.addmin}}
+<h1>this is addmin</h1>
+{{else }}
+<h1>this is normil user</h1>
+{{/if}}
+{{#with person}}
+<h1>{{names}}</h1>
+{{/with}}
